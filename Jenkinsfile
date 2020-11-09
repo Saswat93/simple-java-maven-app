@@ -8,7 +8,7 @@ pipeline {
             steps {
                 git 'https://github.com/Saswat93/simple-java-maven-app.git'
             }
-            }
+            
         }
         stage('Stage2') {
             agent {label 'dal'}
