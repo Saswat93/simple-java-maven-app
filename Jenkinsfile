@@ -19,5 +19,8 @@ pipeline {
               echo env.MYNAME
             }
         }
+        stage ('Post Build') {
+         build job : 'Deploy'   
+        }
    }
 }
