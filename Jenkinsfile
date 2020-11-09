@@ -20,7 +20,9 @@ pipeline {
             }
         }
         stage ('Post Build') {
-         build job : 'Deploy'   
+            steps {
+         build job : 'Deploy'
+            }
         }
    }
 }
