@@ -1,5 +1,8 @@
 pipeline {
     agent { label 'master' }
+    triggers {
+        cron('* * * * *')
+    }
     environment{
         MYNAME = 'Saswat'
     }
