@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'master' };
+    agent { label 'master' }
     environment{
         MYNAME = 'Saswat'
     }
@@ -7,7 +7,7 @@ pipeline {
         stage('Stage1') {
             steps {
                 git 'https://github.com/Saswat93/simple-java-maven-app.git'
-                
+            }
             }
         }
         stage('Stage2') {
